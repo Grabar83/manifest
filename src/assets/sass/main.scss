@@ -1,0 +1,30 @@
+// reset
+@import './global/reset.scss';
+// reset-end
+
+// global
+@import './global/global.scss';
+// global-end
+
+// header
+@import './common/header.scss';
+
+// home.scss
+@import './page/home.scss';
+// home.scss-end
+
+// about.scss
+@import './page/about.scss';
+// about.scss-end
+
+// works.scss
+@import './page/works.scss';
+// works.scss-end
+
+// blog.scss
+@import './page/blog.scss';
+// blog.scss-end
+
+// contact.scss
+@import './page/contact.scss';
+// contact.scss-end
