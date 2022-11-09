@@ -98,28 +98,28 @@ h2 {
 } */
 
 
-/* tablet-size */
-@media(max-width: 1200px) {
-  .nav__conteiner {
-    padding: 23.5px 34px;
-  }
+// /* tablet-size */
+// @media(max-width: $tabalet) {
+//   .nav__conteiner {
+//     padding: 23.5px 34px;
+//   }
 
-  .header__list {
-    display: none;
-  }
-}
+//   .header__list {
+//     display: none;
+//   }
+// }
 
-/* mobile-size */
+// /* mobile-size */
 
-@media(max-width: 576px) {
-  .nav__conteiner {
-    padding: 24px 10px 70px;
-  }
+// @media(max-width: 576px) {
+//   .nav__conteiner {
+//     padding: 24px 10px 70px;
+//   }
 
-  .header__list {
-    display: none;
-  }
-}
+//   .header__list {
+//     display: none;
+//   }
+// }
 
 /* ------main--- */
 .main__first {
