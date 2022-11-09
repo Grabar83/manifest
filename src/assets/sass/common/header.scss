@@ -2,7 +2,7 @@
   &__conteiner {
     display: flex;
     justify-content: space-between;
-    padding: 42px 0;
+    padding: 96px 0 128px;
   }
 
   &__nav-icon {
@@ -17,7 +17,6 @@
     display: flex;
     justify-content: center;
     gap: 42px;
-    list-style: none;
 
     @media(max-width: $tabalet) {
       &__nav-icon {
@@ -25,7 +24,7 @@
         max-width: 24px;
         height: 14px;
       }
-    
+
       &__nav-input {
         display: block;
       }
@@ -40,6 +39,6 @@
     line-height: 17px;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: #000000;
+    color: $color-black;
   }
 }
