@@ -18,7 +18,7 @@
     justify-content: center;
     gap: 42px;
 
-    @media(max-width: $tabalet) {
+    @media(max-width: $tablet) {
       &__nav-icon {
         display: block;
         max-width: 24px;
