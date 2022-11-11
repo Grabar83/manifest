@@ -1,32 +1,44 @@
-// variable
-@import '../variables/media.scss';
+//----------------- variable----------------
+// color
+@import './variables/colors.scss';
+// media
+@import './variables/media.scss';
+// fonts
+@import './variables/fonts.scss';
+
+// -------global----------------
 // reset
 @import './global/reset.scss';
-// reset-end
 
 // global
 @import './global/global.scss';
-// global-end
+//--------------------- global-end----------------------------------------
+
+// -------common----------------------
 
 // header
 @import './common/header.scss';
+@import './common/footer.scss';
+//  ----------------------------------------
+
+// -------pages-scss-----------------
 
 // home.scss
-@import './page/home.scss';
+@import './page-scss/home.scss';
 // home.scss-end
 
 // about.scss
-@import './page/about.scss';
+@import './page-scss/about.scss';
 // about.scss-end
 
 // works.scss
-@import './page/works.scss';
+@import './page-scss/works.scss';
 // works.scss-end
 
 // blog.scss
-@import './page/blog.scss';
+@import './page-scss/blog.scss';
 // blog.scss-end
 
 // contact.scss
-@import './page/contact.scss';
+@import './page-scss/contact.scss';
 // contact.scss-end

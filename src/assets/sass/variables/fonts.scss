@@ -7,3 +7,19 @@ $main-fonts: 'Red Hat Display',
 sans-serif;
 $sub-fonts:'Lato',
 sans-serif;
+
+
+.title {
+  font-family: $main-fonts;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: $color-black;
+
+  @media (max-width:$tablet) {
+    font-size: 33px;
+    line-height: 50px;
+  }
+}

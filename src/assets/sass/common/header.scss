@@ -2,11 +2,27 @@
   &__conteiner {
     display: flex;
     justify-content: space-between;
-    padding: 96px 0 128px;
+    padding-top: 96px;
+
+    @media (max-width: $tablet) {
+      padding: 16px 16px 0;
+    }
   }
 
-  &__nav-icon {
+
+  &__logo {
+    margin-top: 2px;
+  }
+
+  &__nav-label {
     display: none;
+
+    @media (max-width: $tablet) {
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: #000;
+    }
   }
 
   &__nav-input {
@@ -19,20 +35,11 @@
     gap: 42px;
 
     @media(max-width: $tablet) {
-      &__nav-icon {
-        display: block;
-        max-width: 24px;
-        height: 14px;
-      }
-
-      &__nav-input {
-        display: block;
-      }
+      display: none;
     }
   }
 
-  &__nav-link {
-    font-family: 'Lato';
+  &__nav-link {    
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -42,12 +49,12 @@
     color: $color-black;
   }
 
-  &__nav-item{
+  &__nav-item:hover {
     border-bottom: 1px solid #000;
   }
 
-  &--active{
+  &__nav-item--active {
     border-bottom: 1px solid #000;
   }
-  
+
 }

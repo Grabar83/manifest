@@ -1,12 +1,18 @@
-.conteiner{
+body {
+  font-family: $sub-fonts;
+}
+
+.conteiner {
   max-width: 1179px;
   margin: 0 auto;
 }
 
 .logo {
-  max-width: 134px;  
+  max-width: 134px;
+  height: 11px;
 }
 
-li{
+li {
   list-style: none;
 }
+

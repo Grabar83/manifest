@@ -1,0 +1,17 @@
+.footer__conteiner {
+  display: flex;
+  justify-content: space-between;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 16px 16px 0;
+  }
+
+  &__contact {
+    display: block;
+  }
+}

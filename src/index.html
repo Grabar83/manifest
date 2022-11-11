@@ -7,20 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>home</title>
   <!--Шлях до css це відносний шлях не залежить ввід папки-->
-  <link rel="stylesheet" href="@@webRoot/bundle.min.css">  
-  
+  <link rel="stylesheet" href="@@webRoot/bundle.min.css">
+
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="conteiner header__conteiner">
-        <img class="logo" src="./img/logo.png" alt="logo">
+        <img class="logo header__logo" src="./img/logo.png" alt="logo">
         <nav class="header__nav">
-          <label for=gam>
-            <div class="header__nav-icon"><img src="../src/assets/img/icon-gum.svg" alt="gam"></div>
-          </label>          
-          <input class="header__nav-input" id="gam" type="checkbox">          
+          <label class="header__nav-label" for=gam>
+            <div class="header__nav-icon"></div>
+          </label>
+          <input class="header__nav-input" id="gam" type="checkbox">
         </nav>
         <ul class="header__nav-row">
           <li class="header__nav-item header__nav-item--active">
@@ -46,147 +46,37 @@
     <!-- header-end -->
 
     <!-- main -->
-    <main class="main">
-      <section class="main__first">
-        <div class="conteiner main__first-conteiner">
-          <h1 class="first__title">
-            Manifest is a newborn theme.
-            Clean, simple and fast.
-          </h1>
-          <div class="first__img"></div>
-        </div>
+    <main class="page-home">
+      <section>
+        <h1>Page-home</h1>
       </section>
-      <!-- first-end -->
-      <!-- blog -->
+    </main>
+    <!-- main-end -->
 
-      <section class="main__blog">
-        <div class="conteiner blog__conteiner">
-          <h2>
-            Blog
+    <!-- ----footer------->
+    <footer class="footer">
+      <div class="conteiner footer__conteiner">
+        <div class="footer__content">
+          <h2 class="title footer__title">
+            Need a project?
           </h2>
-          <div class="blog__description">
-            <div class="blog__description-blok">
-              <div class="blog__description-blok-img">
-                <img src="./img/blog1-desk.jpg" alt="img">
-              </div>
-              <div class="blog__description-blok-content">
-                <div class="description-blok-content">
-                  <p class="blok-paragraph">
-                    Technology, Interface Design
-                  </p>
-                  <h4 class="blog__description-title">
-                    Using UX Design to Build a Sustainable Future
-                  </h4>
-                  <p class="blok-paragraph">
-                    6 May, 2020
-                  </p>
-                  <p class="blok-paragraph-text">
-                    Transformation has to be driven by everybody, not just by climate groups, and we
-                    have a responsibility to use our influence to drive this.
-                    <a class="arrow" href="#"><img src="./img/Arrow1.svg" alt="Arrow"></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="blog__description-blok">
-              <div class="blog__description-blok-content">
-                <div class="description-blok-content">
-                  <p class="blok-paragraph">
-                    Technology, Interface Design
-                  </p>
-                  <h4 class="blog__description-title">
-                    Using UX Design to Build a Sustainable Future
-                  </h4>
-                  <p class="blok-paragraph">
-                    Technology, Interface Design
-                  </p>
-                  <p class="blok-paragraph-text">
-                    Transformation has to be driven by everybody, not just by climate groups, and we
-                    have a responsibility to use our influence to drive this.
-                    <a class="arrow" href="#"><img src="./img/Arrow1.svg" alt="Arrow"></a>
-                  </p>
-                </div>
-              </div>
-              <div class="blog__description-blok-img">
-                <img src="./img/blog2-desk.jpg" alt="img">
-              </div>
-            </div>
-          </div>
+          <a href="tel:2395550108" class="footer__contact">(239) 555-0108</a>
+          <a href="mailto:tanya.hill@example.com" class="footer__contact">tanya.hill@example.com</a>
         </div>
-      </section>
-      <!-- blog-end -->
 
-      <!-- posts -->
-      <section class="posts">
-        <div class=" conteiner posts__conteiner">
-          <h3 class="posts__title">
-            Latest Posts
-          </h3>
-          <div class="posts__blok">
-            <div class="posts__blok-first">
-              <img class="posts__blok-first-img" src="./img/first-desk.jpg" alt="posts">
-              <div class="posts__text">
-                <div class="posts__text-before">
-                  <p>
-                    Interface Design
-                  </p>
-                  <p>
-                    8 June, 2020
-                  </p>
-                </div>
-                <h4 class="posts__text-title">
-                  UX traffic light colours
-                </h4>
-                <p class="posts__text-after">
-                  UI has to make a huge visual difference between warning, an alert and a success.
-                </p>
-              </div>
-            </div>
-            <div class="posts__blok-first">
-              <img class="posts__blok-first-img" src="./img/second-desk.jpg" alt="posts">
-              <div class="posts__text">
-                <div class="posts__text-before">
-                  <p>
-                    Technology
-                  </p>
-                  <p>
-                    6 May, 2020
-                  </p>
-                </div>
-                <h4 class="posts__text-title">
-                  UX traffic light colours
-                </h4>
-                <p class="posts__text-after">
-                  UI has to make a huge visual difference between warning, an alert and a success.
-                </p>
-              </div>
-            </div>
-            <div class="posts__blok-first">
-              <img class="posts__blok-first-img" src="./img/first-desk.jpg" alt="posts">
-              <div class="posts__text">
-                <div class="posts__text-before">
-                  <p>
-                    Interface Design
-                  </p>
-                  <p>
-                    8 June, 2020
-                  </p>
-                </div>
-                <h4 class="posts__text-title">
-                  UX traffic light colours
-                </h4>
-                <p class="posts__text-after">
-                  UI has to make a huge visual difference between warning, an alert and a success.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-  </div>
-  </section>
-  <!-- posts-end -->
-  </main>
-  <!-- main-end -->
+        <ul class="footer__social">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Dribbble</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
+
+        <p class="footer__copyright">
+          © Copyright Manifest Theme. Allrights reserved
+        </p>
+      </div>
+    </footer>
+    <!-- ----footer-end----- -->    
   </div>
 
   <!--Обовязково додавати потрібно для JS -->
