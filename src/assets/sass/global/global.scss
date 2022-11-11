@@ -1,5 +1,13 @@
 body {
   font-family: $sub-fonts;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .conteiner {
@@ -16,3 +24,25 @@ li {
   list-style: none;
 }
 
+.hover-link-animation {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.button {
+  width: 160px;
+  height: 45px;
+  background: $full-gray;
+  color: #ffffff;
+  border: none;
+}
+
+.arrow {
+  display: inline-block;
+  height: 8px;
+  width: 19px;
+}
