@@ -1,0 +1,103 @@
+.fashion {
+    &__conteiner {
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+        margin-bottom: 128px;
+
+        @media (max-width:$tablet) {
+            padding: 74px 16px 64px;
+            margin-top: 0;
+        }
+    }
+
+    &__case {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5em;
+        color: #000000;
+        margin-bottom: 48px;
+
+        @media (max-width:$tablet) {
+            margin-bottom: 39px;
+        }
+    }
+
+    &__platform {
+        display: flex;
+        flex-direction: column;
+        margin-top: 64px;
+        gap: 128px;
+
+        @media (max-width:$tablet) {
+            margin-top: 52px;
+            gap: 48px;
+        }
+    }
+
+    &__discription {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__discription-first {
+        gap: 130px;
+
+        @media (max-width:$tablet) {
+            gap: 0;
+        }
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        gap: 224px;
+
+        @media (max-width:$tablet) {
+            flex-direction: column;
+            margin-top: 52px;
+            gap: 0;
+        }
+    }
+
+    &__text-overview {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media (max-width:$tablet) {
+            gap: 0;
+            margin-bottom: 64px;
+        }
+    }
+
+    &__text-title-first {
+        @media (max-width:$tablet) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__paragraph-first {
+        @media (max-width:$tablet) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+    }
+
+    &__img1 {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        @media (max-width:$tablet) {
+            font-size: 33px;
+            line-height: 50px;
+        }
+    }
+}

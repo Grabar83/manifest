@@ -21,7 +21,7 @@
       display: block;
       width: 32px;
       height: 32px;
-      background: #000;
+      background: url(./img/icon-gum.svg) no-repeat;
       position: relative;
       z-index: 100;
     }
@@ -38,12 +38,13 @@
   }
 
   &__nav-input {
-    display: none;
-
-    &:checked~.header__nav-row {
+    display: none;    
+    
+    &:checked~.header__nav-row {          
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       position: fixed;
       background-color: #615a5a;
       top: 0;
