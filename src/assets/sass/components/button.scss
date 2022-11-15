@@ -1,0 +1,22 @@
+.button {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 45px;
+    background: $full-gray;
+    color: #ffffff;
+    border: none;
+}
+
+.button-arrow::after {
+    content: '';
+    display: block;
+    width: 19px;
+    height: 12px;
+    background: url(./img/Arrow-wight.svg) no-repeat;
+    padding-left: 5px;
+    padding-top: 5px;
+}

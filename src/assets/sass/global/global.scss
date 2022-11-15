@@ -1,49 +1,36 @@
 body {
-  font-family: $sub-fonts;
-  font-style: normal;
-  font-weight: 400;
+    font-family: $sub-fonts;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .conteiner {
-  max-width: 1179px;
-  margin: 0 auto;
+    max-width: 1179px;
+    margin: 0 auto;
 }
 
 .logo {
-  max-width: 134px;
-  height: 11px;
+    max-width: 134px;
+    height: 11px;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
-.hover-link-animation {
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+@media(min-width: $tablet) {
+    .hover-link-animation {
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
 
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-
-.button {
-  width: 160px;
-  height: 45px;
-  background: $full-gray;
-  color: #ffffff;
-  border: none;
-}
-
-.button-arrow {
-  display: inline-block;  
-  height: 14px;
-  width: 19px;
-  padding-top: 4px;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
