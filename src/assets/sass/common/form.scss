@@ -1,0 +1,35 @@
+.form {
+    &__title {
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.05em;
+        color: #565656;
+        display: block;
+    }
+
+    &__inp {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: $color-gray-500;
+        padding: 9px 0;
+        display: block;
+        border: none;
+        outline: none;
+        width: 100%;
+        border-bottom: 1px solid $color-black;
+        &:hover{
+            border-bottom: 1px solid #eaf108;
+        }
+        &:focus{
+            border-bottom: 1px solid red;
+        }
+
+        &::placeholder {
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.1em;
+            color: $color-gray-500;
+        }
+    }
+}

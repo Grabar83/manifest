@@ -1,248 +1,35 @@
-* .box-item {
-  max-width: 800px;
-  max-height: 800px;
-  background: #D9D9D9;
-  display: flex;
-}
+.page-home {
+    position: relative;
 
-img {
-  display: block;
-  width: 100%;
-}
-
-h2 {
-  font-family: 'Red Hat Display';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 64px;
-  letter-spacing: 0.05em;
-  color: #000000;
-}
-
-/* --------default------------- */
-
-.wrapper {
-  background: #ffffff;
-
-}
-
-
-
-// .header {
-//   &__list {
-//     display: flex;
-//     justify-content: space-between;
-//     list-style: none;
-//   }
-
-//   &__list li {
-//     padding-left: 42px;
-//   }
-
-//   &__list li:first-child {
-//     padding-left: 0;
-//   }
-
-//   &__link {
-//     font-family: 'Lato';
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 17px;
-//     letter-spacing: 0.3em;
-//     text-transform: uppercase;
-//     color: #000000;
-//     text-decoration: none;
-//     display: block;
-//     max-width: 500px;
-//   }
-
-//   &__link:after {
-//     content: '';
-//     display: block;
-//     height: 1px;
-//     width: calc(100% - 8px);
-//     background: #000;
-//     visibility: hidden;
-//   }
-
-//   &__link:hover.header__link:after {
-//     visibility: visible;
-//   }
-// }
-
-/* .header__btn {
-    display: block;
-    display: flex;
-    align-items: center;
-    width: 35px;
-    height: 20px;
-    cursor: pointer;
-}
-
-.header__btn> span,
-.header__btn> span::before,
-.header__btn> span::after
- {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background: #000;
-} */
-
-
-// /* tablet-size */
-// @media(max-width: $tabalet) {
-//   .nav__conteiner {
-//     padding: 23.5px 34px;
-//   }
-
-//   .header__list {
-//     display: none;
-//   }
-// }
-
-// /* mobile-size */
-
-// @media(max-width: 576px) {
-//   .nav__conteiner {
-//     padding: 24px 10px 70px;
-//   }
-
-//   .header__list {
-//     display: none;
-//   }
-// }
-
-/* ------main--- */
-.main__first {
-  width: 100%;
-  min-height: 600px;
-  background: url(../img/bg-image.jpg);
-  background-size: cover;
-  background-position: center center;
-  padding: 100px 135px 0;
-  margin-bottom: 90px;
-}
-
-.first__title {
-  max-width: 770px;
-  font-family: 'Red Hat Display';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 64px;
-  letter-spacing: 0.05em;
-  color: #000000;
-}
-
-/* tablet-size */
-@media(max-width: 1200px) {
-  .main__first {
-    padding: 30px 34px 0;
-  }
-
-  .first__title {
-    max-width: 600px;
-    min-height: 320px;
-    font-size: 36px;
-    line-height: 50px;
-    letter-spacing: 0.05em;
-  }
-}
-
-/* first-end */
-
-/* ------blog -----*/
-
-/* ---description */
-
-.main__blog {
-  padding: 0 135px;
-
-}
-
-.blog {
-  &__description {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    margin-top: 50px;
-  }
-
-  &__description-blok {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-
-    &-content {
-      padding-top: 85px;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 166%;
+    &__modal {
+        border: 1px solid $color-black;
+        border-radius: 20px;
+        max-width: 500px;
+        width: 100%;
+        padding: 30px;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        background: $base-white;
     }
-  }
-}
 
-.description-blok-content {
-  max-width: 520px;
-}
+    &__modal-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        padding: 0;
+        margin: 0;
+        line-height: 1px;
 
-.blog__description-blok-img {
-  max-width: 100%;
-  width: 50%;
-}
-
-.blok-paragraph {
-  letter-spacing: 0.1em;
-  color: #7B7B7B;
-}
-
-.blog__description-title {
-  font-family: 'Red Hat Display';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 23px;
-  line-height: 166%;
-  letter-spacing: 0.1em;
-  color: #000000;
-  margin: 30px 0 15px;
-}
-
-.blok-paragraph-text {
-  letter-spacing: 0.05em;
-  color: #565656;
-  margin-top: 50px;
-}
-
-/* ------description-end----- */
-
-// posts
-.posts {
-  &__blok {
-    display: flex;
-    gap: 30px;
-  }
-
-  &__text {
-    &-before {
-      display: flex;
-      justify-content: space-between;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 166%;
-      letter-spacing: 0.1em;
-      color: #7B7B7B;
+        &:hover {
+            color: $color-gray-500;
+            line-height: 1px;
+            cursor: pointer;
+        }
     }
-  }
 
+    &__modal-text {
+        padding: 10px 0;
+    }
 }
-
-// posts-end
-
-/* ------blog-end--- */
