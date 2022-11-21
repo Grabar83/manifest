@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page-blog</title>
+    <title>Manifest</title>
     <!--Шлях до css це відносний шлях не залежить ввід папки-->
     <link rel="stylesheet" href="@@webRoot/bundle.min.css">
 
@@ -49,32 +49,66 @@
         <main class="page-contacts">
             <section class="page-contacts__section">
                 <div class="conteiner page-contacts__conteiner">
-                    <div class="page-contacts__data">
+                    <div class="page-contacts__header">
                         <h1 class="h1 page-contacts__title">Contact Us</h1>
-                        <div class="page-contacts__information">
-                            <h3 class="h3 page-contacts__information-title">Contact information                                
-                            </h3>
-                            <ul class="h6 page-contacts__list">
-                                <li>486 Rahi street, Berlin .98
-                                    Germany
-                                </li>
-                                <li><a class="h6 page-contacts__tel" href="tel:+48601366816">+48 601 366 816</a></li>
-                                <li><a class="h6 page-contacts__email" href="mailto:company@support.com">company@support.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="page-contacts__social">
-                            <h3 class="h3 page-contacts__information-title">Follow Us                                
-                            </h3>
-                            <div class="page-contacts__social-items">
-                                <a class="page-contacts__social-links" href="#"></a>
-                                <a class="page-contacts__social-links" href="#"></a>
-                                <a class="page-contacts__social-links" href="#"></a>
-                                <a class="page-contacts__social-links" href="#"></a>
+                        <p class="h4 page-contacts__help">
+                            If you need our help with your user account, have questions about how to use the platform or
+                            are experiencing technical difficulties, please do not hesitate to contact us.
+                        </p>
+                    </div>
+                    <div class="page-contacts__box">
+                        <div class="page-contacts__blok">
+                            <div class="page-contacts__information">
+                                <h3 class="h3 page-contacts__information-title">Contact information
+                                </h3>
+                                <ul class="h6 page-contacts__list">
+                                    <li>486 Rahi street, Berlin .98
+                                        Germany
+                                    </li>
+                                    <li><a class="h6" href="tel:+48601366816"><span class="page-contacts__tel">+48 601 366 816</span></a></li>
+                                    <li><a class="h6 page-contacts__email"
+                                            href="mailto:company@support.com">company@support.com</a></li>
+                                </ul>
+                            </div>
+                            <div class="page-contacts__social">
+                                <h3 class="h3 page-contacts__information-title">Follow Us
+                                </h3>
+                                <div class="page-contacts__social-items">
+                                    <a class="page-contacts__social-links page-contacts__social-links--fb" href="#"></a>
+                                    <a class="page-contacts__social-links page-contacts__social-links--twit" href="#"></a>
+                                    <a class="page-contacts__social-links page-contacts__social-links--inst" href="#"></a>
+                                    <a class="page-contacts__social-links page-contacts__social-links--drib" href="#"></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="page-contacts__help">
-
+                        <div class="page-contacts__blok">
+                            <form action="#" class="form page-contacts__form">
+                                <div class="form__fields">
+                                    <span class="form__title">Name</span>
+                                    <input class="form__inp" type="text" placeholder="Walter Moss">
+                                </div>
+                                <div class="form__fields">
+                                    <span class="form__title">Email*</span>
+                                    <input class="form__inp" type="email" placeholder="Info@manifest.com">
+                                </div>
+                                <div class="form__fields">
+                                    <span class="form__title">Reason for contact</span>
+                                    <select class="form__inp" name="" id="">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                                <div class="form__fields">
+                                    <span class="form__title">Message*</span>
+                                    <input class="form__inp" type="email" placeholder="Hi there ...">
+                                </div>
+                                <button class="button page-contacts__blok-button" type="submit">
+                                    Send
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -1,0 +1,131 @@
+.page-contacts {
+    &__conteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 130px;
+        margin-bottom: 128px;
+
+        @media (max-width: $tablet) {
+            margin-top: 64px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            margin-bottom: 64px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 192px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 42px;
+        }
+    }
+
+    &__help {
+        width: 50%;
+        max-width: 100%;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &__blok {
+        width: 50%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    &__information {
+        max-width: 305px;
+        margin-bottom: 69px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 51px;
+        }
+    }
+
+    &__information-title {
+        margin-bottom: 24px;        
+    }
+
+    &__tel{
+        display: block;
+        &::before{
+            display: block;
+            height: 20px;
+            width: 20px;
+            background-image: url(./img/contacts/Tel.svg);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+
+        @media (max-width: $tablet) {
+            gap: 23px;
+        }
+    }
+
+    &__social {
+        @media (max-width: $tablet) {
+            margin-bottom: 64px;
+        }
+    }
+
+    &__social-items {
+        display: flex;
+        justify-content: start;
+        gap: 24px;
+    }
+
+    &__social-links {
+        display: block;
+    }
+
+    &__social-links--fb {
+        background-image: url(./img/contacts/fb.svg);
+        height: 16px;
+        width: 9px;
+    }
+
+    &__social-links--twit {
+        background-image: url(./img/contacts/twitter.svg);
+        height: 16px;
+        width: 19px;
+    }
+
+    &__social-links--inst {
+        background-image: url(./img/contacts/instagram.svg);
+        height: 16px;
+        width: 18px;
+    }
+
+    &__social-links--drib {
+        background-image: url(./img/contacts/Dribble.svg);
+        height: 16px;
+        width: 18px;
+    }
+
+    &__blok-button {
+        margin-top: 64px;
+    }
+}

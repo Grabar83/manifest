@@ -11,7 +11,7 @@
         transform: translate(-50%, -50%);
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;        
         display: none;
     }
 
@@ -27,7 +27,7 @@
         padding: 30px;
         position: relative;
         background: $base-white;
-        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.71);        
     }
 
     &__modal-close {
