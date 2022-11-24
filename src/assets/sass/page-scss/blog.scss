@@ -1,0 +1,43 @@
+.page-blog {
+    .top{
+        &__conteiner{
+            margin-top: 131px;
+        }
+    }
+    
+    .slide {
+        display: flex;
+        flex-direction: column;  
+        margin-top: 96px;      
+
+        &__conteiner {
+            display: flex;
+            justify-content: space-between;
+            gap: 68px;
+        }
+
+        &__img {
+            width: 50%;
+            max-width: 100%;
+        }
+
+        &__tag {
+            margin: 50px 0 24px;
+        }
+
+        &__date {
+            margin: 16px 0 48px;
+        }
+
+        &__description{
+            margin-bottom: 147px;
+        }
+
+        &__num-list {
+            display: flex;
+            justify-content: space-between;
+            max-width: 50px;
+            line-height: 1;            
+        }
+    }
+}

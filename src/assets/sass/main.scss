@@ -6,13 +6,19 @@
 // fonts
 @import './variables/fonts.scss';
 
+
+
 // -------global----------------
+// -----animation-------
+@import './global/animation.scss';
 // reset
 @import './global/reset.scss';
 
 // global
 @import './global/global.scss';
-//--------------------- global-end----------------------------------------
+//--------------------- global-end--------
+
+
 
 // -------common----------------------
 
@@ -24,6 +30,9 @@
 
 // components------
 @import './components/button.scss';
+
+
+
 
 // -------pages-scss-----------------
 
