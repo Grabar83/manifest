@@ -9,4 +9,15 @@
     }
 }
 
+.animation-right {
+    transform: translateX(850px);
+    opacity: 1;
+    transition: all 1s;
+
+    &__active-right {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 

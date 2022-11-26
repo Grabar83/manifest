@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page-blog</title>
+    <title>manifest</title>
     <!--Шлях до css це відносний шлях не залежить ввід папки-->
     <link rel="stylesheet" href="@@webRoot/bundle.min.css">
 
@@ -24,7 +24,7 @@
                 </nav>
                 <ul class="header__nav-row">
                     <li class="header__nav-item ">
-                        <a class=" header__nav-link" href="/">home</a>
+                        <a class=" header__nav-link" href="./home.html">home</a>
                     </li>
                     <li class="header__nav-item ">
                         <a class=" header__nav-link" href="./about.html">about</a>
@@ -33,7 +33,7 @@
                         <a class=" header__nav-link" href="./works.html">works</a>
                     </li>
                     <li class="header__nav-item header__nav-item--active">
-                        <a class=" header__nav-link" href="./blog.html">blog</a>
+                        <a class=" header__nav-link" href="/">blog</a>
                     </li>
                     <li class="header__nav-item">
                         <a class=" header__nav-link" href="./contact.html">contact</a>
@@ -50,13 +50,17 @@
         <main class="page-blog">
             <section class="top">
                 <div class="conteiner top__conteiner">
-                    <h1 class="h1 top__title">Page blog</h1>
+                    <h1 class="h1 top__title">Blog</h1>
                 </div>
             </section>
 
+            <!-- slide +++++++++++++----------------- -->
             <section class="slide">
                 <div class="conteiner slide__conteiner">
-                    <img class="slide__img" src="../img/blog/slide-desk.jpg" alt="img">
+                    <picture class="slide__img">
+                        <source media="(max-width:$tablet)" srcset="../img/blog/slide-mob.jpg">
+                        <img src="../img/blog/slide-desk.jpg" alt="img">
+                    </picture>
                     <div class="slide__content">
                         <p class="h6 slide__tag">
                             Technology, Interface Design
@@ -68,16 +72,126 @@
                             6 May, 2020
                         </p>
                         <p class="h5 slide__description">
-                            Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.
+                            Transformation has to be driven by everybody, not just by climate groups, and we have a
+                            responsibility to use our influence to drive this.
                         </p>
                         <ul class="h6 slide__num-list">
-                            <li class="slide__num-item"><a href="#">1</a></li>
-                            <li class="slide__num-item"><a href="#">2</a></li>
-                            <li class="slide__num-item"><a href="#">3</a></li>
+                            <li class="slide__num-item"><a class="h6 slide__link" href="#">1</a></li>
+                            <li class="slide__num-item"><a class="h6 slide__link" href="#">2</a></li>
+                            <li class="slide__num-item"><a class="h6 slide__link" href="#">3</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
+            <!-- slide +++++++++++++ ---------------->
+
+
+            <!--Categories------------------  -->
+            <section class="categories">
+                <div class="conteiner categories__conteiner">
+                    <div class="categories__content">
+                        <h6 class="categories__title">
+                            Categories:
+                        </h6>
+                        <select class="categories__select" name="categories" id=""></select>
+                    </div>
+            </section>
+            <!-- Categories---------------------- -->
+
+            <!-- --post--------- -->
+            <section class="post">
+                <div class="conteiner post__conteiner">
+                    <div class="post__box">
+                        <div class="post__cart">
+                            <picture class="post__img">
+                                <source media="(max-width:$tablet)" srcset="../img/blog/post1-mob.jpg">
+                                <img src="../img/blog/post1-desk.jpg" alt="img">
+                            </picture>
+                            <div class="post__tag">
+                                <p class="h9 post__tag-title">
+                                    Interface Design
+                                </p>
+                                <p class="h9 post__tag-date">
+                                    8 June, 2020
+                                </p>
+                            </div>
+                            <h3 class="h3 post__title">
+                                UX traffic light colours
+                            </h3>
+                            <p class="h5 post__text">
+                                UI has to make a huge visual difference between warning, an alert and a success.
+                            </p>
+                        </div>
+                        <div class="post__cart post__cart--grid">
+                            <picture class="post__img">
+                                <source media="(max-width:$tablet)" srcset="../img/blog/post2-mob.jpg">
+                                <img src="../img/blog/post2-desk.jpg" alt="img">
+                            </picture>
+                            <div class="post__tag">
+                                <p class="h9 post__tag-title">
+                                    Visual Design, Technology
+                                </p>
+                                <p class="h9 post__tag-date">
+                                    8 June, 2020
+                                </p>
+                            </div>
+                            <h3 class="h3 post__title">
+                                Understanding users by going beyond personas, demographics, and affinity
+                            </h3>
+                            <p class="h5 post__text">
+                                Personas are great for ‘humanizing’ users. However, you shouldn’t rely on them to define
+                                what larger demographic or affinity groups—especially diverse ones—might want
+                            </p>
+                        </div>
+                        <div class="post__cart post__cart--grid">
+                            <picture class="post__img">
+                                <source media="(max-width:$tablet)" srcset="../img/blog/post3-mob.jpg">
+                                <img src="../img/blog/post3-desk.jpg" alt="img">
+                            </picture>
+                            <div class="post__tag">
+                                <p class="h9 post__tag-title">
+                                    Interface Design
+                                </p>
+                                <p class="h9 post__tag-date">
+                                    8 June, 2020
+                                </p>
+                            </div>
+                            <h3 class="h3 post__title">
+                                Mentorship Match — How a simple LinkedIn feature can boost diversity
+                            </h3>
+                            <p class="h5 post__text">
+                                LinkedIn is on a clear mission to make professionals more successful by connecting the
+                                global workforce and as we learned — diversity and success go hand in hand
+                            </p>
+                        </div>
+                        <div class="post__cart">
+                            <picture class="post__img">
+                                <source media="(max-width:$tablet)" srcset="../img/blog/post4-mob.jpg">
+                                <img src="../img/blog/post4-desk.jpg" alt="img">
+                            </picture>
+                            <div class="post__tag">
+                                <p class="h9 post__tag-title">
+                                    Visual Design
+                                </p>
+                                <p class="h9 post__tag-date">
+                                    8 June, 2020
+                                </p>
+                            </div>
+                            <h3 class="h3 post__title">
+                                Creativity vs. UX
+                            </h3>
+                            <p class="h5 post__text">
+                                Is it possible to create a delightful user experience without following best UX
+                                practices?
+                            </p>
+                        </div>
+                    </div>
+                    <a class="h7 button page-blog__button" href="./single-blog.html">
+                        Load More
+                    </a>
+                </div>
+            </section>
+            <!-- --post-end--------- -->
         </main>
         <!-- main-end -->
         <footer class="footer">

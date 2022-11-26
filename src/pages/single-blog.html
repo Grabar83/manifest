@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifest</title>
+    <!--Шлях до css це відносний шлях не залежить ввід папки-->
+    <link rel="stylesheet" href="@@webRoot/bundle.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="conteiner header__conteiner">
+                <img class="logo" src="../img/logo.png" alt="logo">
+                <nav class="header__nav">
+                    <label class="header__nav-label" for=gam>
+                        <div class="header__nav-icon"></div>
+                    </label>
+                    <input class="header__nav-input" id="gam" type="checkbox">
+                </nav>
+                <ul class="header__nav-row">
+                    <li class="header__nav-item ">
+                        <a class=" header__nav-link" href="./home.html">home</a>
+                    </li>
+                    <li class="header__nav-item ">
+                        <a class=" header__nav-link" href="./about.html">about</a>
+                    </li>
+                    <li class="header__nav-item ">
+                        <a class=" header__nav-link" href="./works.html">works</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item--active">
+                        <a class=" header__nav-link" href="/">blog</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class=" header__nav-link" href="./contact.html">contact</a>
+                    </li>
+                </ul>
+                </nav>
+                <!-- <a class="header__search" href="#"><img src="./img/search.svg" alt=""></a> -->
+            </div>
+        </header>
+        <!-- header-end---------------- -->
+
+        <!-- ---single-blog -->
+        <main class="single-blog">
+
+            <!-- top -->
+            <section class="conteiner top">
+                <p class="h6 top__tag">
+                    Technology, Interface Design
+                </p>
+                <h1 class="h1 top__title">
+                    Using UX Design to Build a Sustainable Future
+                </h1>
+                <div class="top__data">
+                    <p class="h6 top__date">6 May, 2020</p>
+                    <div class="top__comment">
+                        <label class="top__label" for="com">
+                            <div class="top__label-img"></div>
+                        </label>
+                        <input class="top__input" type="checkbox" id="com">
+                        <textarea class="top__text" name="comment" id="" cols="30" rows="10"></textarea>
+                        <span class="h6 top__span">0 Comments</span>
+                    </div>
+                </div>
+                <picture class="top__img">
+                    <source media="(max-width:$tablet)" srcset="../img/single-blog/top-mob.jpg">
+                    <img src="../img/single-blog/top-desk.jpg" alt="img">
+                </picture>
+            </section>
+            <!-- top-end -->
+
+            <!-- img -->
+
+        </main>
+
+        <!-- ---single-blog -->
+
+        <!-- --------------footer------------ -->
+        <footer class="footer">
+            <div class="conteiner footer__conteiner">
+                <div class="footer__content">
+                    <h2 class="h1 footer__title">
+                        Need a project?
+                    </h2>
+                    <a href="tel:2395550108" class="h6 footer__contact">(239) 555-0108</a>
+                    <a href="mailto:tanya.hill@example.com" class="h6 footer__contact">tanya.hill@example.com</a>
+                </div>
+
+                <ul class="footer__social-row">
+                    <li class="hover-link-animation footer__social-item">
+                        <a class="h6 footer__link" href="#">Facebook</a>
+                    </li>
+                    <li class="hover-link-animation footer__social-item">
+                        <a class="h6 footer__link" href="#">Instagram</a>
+                    </li>
+                    <li class="hover-link-animation footer__social-item">
+                        <a class="h6 footer__link" href="#">Dribbble</a>
+                    </li>
+                    <li class="hover-link-animation footer__social-item">
+                        <a class="h6 footer__link" href="#">Linkedin</a>
+                    </li>
+                </ul>
+
+                <p class="h9 footer__description">
+                    © Copyright Manifest Theme. Allrights reserved
+                </p>
+            </div>
+        </footer>
+        <!-- ----footer-end----- -->
+    </div>
+
+    <!--Обовязково додавати потрібно для JS -->
+    <script>
+        var exports = {};
+    </script>
+    <script src="@@webRoot/js/index.js"></script>
+    </div>
+</body>
+
+</html>
