@@ -34,6 +34,9 @@
             width: 16px;
             height: 15px;
             background-image: url(../img/single-blog/comment.svg);
+            position: relative;
+            top: 7px;
+
 
             &:hover {
                 cursor: pointer;
@@ -48,6 +51,94 @@
                 position: absolute;
                 top: 27px;
                 left: 19px
+            }
+        }
+    }
+
+    &__content {
+        margin: 0 auto;
+        max-width: 735px;
+
+        .description {
+            margin-top: 41px;
+            position: relative;
+
+            &__writer {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 40px;
+
+                @media (max-width: $tablet) {
+                    margin-bottom: 45px;
+                }
+            }
+
+            &__img {
+                display: block;
+                width: 70px;
+            }
+
+            // ---------------------------------------------
+
+            &__social {
+                @media (max-width: $tablet) {
+                    margin-bottom: 31px;
+                }
+
+                @media (min-width: $tablet) {
+                    flex-direction: column;
+                    position: absolute;
+                    left: -102px;
+                    top: 120px
+                }
+            }
+
+            // -----------------------------------------
+
+            &__content,
+            &__text-blok,
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+            }
+
+            &__text-blok {
+                border-left: 2px solid $color-gray-500;
+                padding-left: 64px;
+            }
+
+            &__text--gray {
+                color: $color-gray-500;
+            }
+
+            &__list li {
+                list-style: disc;
+                list-style-position: inside;
+            }
+
+            // ---------------------
+
+            &__tags {
+                display: flex;
+                gap: 16px;
+                margin-top: 66px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid $color-gray;
+
+                @media (max-width: $tablet) {
+                    border-bottom: 1px solid $color-gray-500;
+                    color: $color-gray-500;
+                }
+            }
+
+            &__tags-links {
+                color: $color-gray-500;
+
+                @media (max-width: $tablet) {
+                    color: $color-black;
+                }
             }
         }
     }

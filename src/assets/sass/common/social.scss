@@ -1,0 +1,27 @@
+.social {
+    display: flex;
+    gap: 24px;
+
+    .social-link {
+        display: block;
+        width: 19px;
+        height: 18px;
+        background-image: url(./img/sprite.jpg);
+    }
+
+    .social-link--fb {
+        background-position-y: 137px;
+    }
+
+    .social-link--twit {
+        background-position-y: 98px;
+    }
+
+    .social-link--inst {
+        background-position-y: 57px;
+    }
+
+    .social-link--dribble {
+        background-position-y: 155px;
+    }
+}
