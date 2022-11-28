@@ -59,6 +59,8 @@
         margin: 0 auto;
         max-width: 735px;
 
+        // section description-------------------
+
         .description {
             margin-top: 41px;
             position: relative;
@@ -141,5 +143,56 @@
                 }
             }
         }
+
+        // section description-end ------------------
+
+        // ---section reply-------------------
+
+        .reply {
+            margin-top: 96px;
+
+            @media (max-width:$tablet) {
+                margin-top: 80px;
+            }
+
+            &__form {
+                margin-top: 64px;
+            }
+
+            &__form-info {
+                display: flex;
+                justify-content: space-between;
+                gap: 43px;
+                margin-bottom: 48px;
+
+                @media (max-width:$tablet) {
+                    flex-direction: column;
+                    gap: 24px;
+                    margin-bottom: 22px;
+                }
+            }
+
+            &__form-title {
+                margin-bottom: 16px;
+            }
+
+            &__form-save {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 49px;
+
+                @media (max-width:$tablet) {
+                    margin-top: 26px;
+                }
+            }
+
+            &__button {
+                margin-top: 24px;
+            }
+        }
+
+        // ---section reply-end  ------------------
+
+
     }
 }
