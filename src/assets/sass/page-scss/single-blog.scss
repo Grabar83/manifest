@@ -193,6 +193,61 @@
 
         // ---section reply-end  ------------------
 
+        // -----------Comments-----------------
+
+        .Comments {
+            margin-top: 104px;
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                gap: 78px;
+                margin-top: 24px;
+            }
+
+            &__content-number {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 43px;
+            }
+
+            &__content-item,
+            &__content-answer-item {
+                display: flex;
+                justify-content: space-between;
+                gap: 24px;
+            }
+
+            &__content-item-text {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            &__content-item-text h9 {
+                line-height: 1;
+            }
+
+            &__content-item-header {
+                display: flex;
+                gap: 24px;
+
+                @media (max-width:$tablet) {
+                    flex-direction: column;
+                    gap: 16px;
+                }
+            }
+
+            &__content-answer {
+                align-self: flex-end;
+                max-width: 640px;
+            }
+
+        }
+
+        // -----------Comments-end----------------
+
 
     }
 }
