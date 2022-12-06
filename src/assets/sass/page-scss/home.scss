@@ -94,31 +94,34 @@
             }
         }
 
-        &__blok{
+        &__blok {
             display: flex;
             justify-content: space-between;
             gap: 34px;
 
             @media (max-width:$tablet) {
                 flex-direction: column;
-                gap: 48px;                
+                gap: 48px;
+            }
         }
 
-        &__blok-card{
+        &__blok-card {
             display: flex;
             flex-direction: column;
             gap: 24px;
         }
 
-        &__blok-tag{
+        &__blok-tag {
             display: flex;
             justify-content: space-between;
-            
+
             @media (max-width:$tablet) {
                 flex-direction: column;
-                gap: 8px;                
-        }        
+                gap: 8px;
+            }
+        }
     }
+
 
     // --------------------------
 
@@ -172,3 +175,4 @@
     // &__modal-text {
     //     padding: 10px 0;
     // }
+}
