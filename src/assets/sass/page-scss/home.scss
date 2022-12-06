@@ -86,12 +86,22 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 40px;
+
+            @media (max-width:$tablet) {
+                flex-direction: column;
+                gap: 8px;
+                margin-bottom: 48px;
+            }
         }
 
         &__blok{
             display: flex;
             justify-content: space-between;
             gap: 34px;
+
+            @media (max-width:$tablet) {
+                flex-direction: column;
+                gap: 48px;                
         }
 
         &__blok-card{
@@ -102,7 +112,11 @@
 
         &__blok-tag{
             display: flex;
-            justify-content: space-between;            
+            justify-content: space-between;
+            
+            @media (max-width:$tablet) {
+                flex-direction: column;
+                gap: 8px;                
         }        
     }
 
